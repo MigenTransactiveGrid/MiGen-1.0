@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<ReadingType xmlns="http://zigbee.org/sep">
+	<accumulationBehaviour>6</accumulationBehaviour>
+	<calorificValue>
+		<multiplier>0</multiplier>
+		<unit>38</unit>
+		<value>38</value>
+	</calorificValue>
+	<commodity>2</commodity>
+	<conversionFactor>
+		<multiplier>0</multiplier>
+		<unit>38</unit>
+		<value>1</value>
+	</conversionFactor>
+	<dataQualifier>12</dataQualifier>
+	<flowDirection>19</flowDirection>
+	<intervalLength>60</intervalLength>
+	<kind>37</kind>
+	<maxNumberOfIntervals>1</maxNumberOfIntervals>
+	<numberOfConsumptionBlocks>1</numberOfConsumptionBlocks>
+	<numberOfTouTiers>1</numberOfTouTiers>
+	<phase>129</phase>
+	<powerOfTenMultiplier>0</powerOfTenMultiplier>
+	<subIntervalLength>1</subIntervalLength>
+	<supplyLimit>281474976710655</supplyLimit>
+	<tieredConsumptionBlocks>false</tieredConsumptionBlocks>
+	<uom>38</uom>
+</ReadingType>

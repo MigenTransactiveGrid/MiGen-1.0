@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<DER href="/edev/2/der/1" subscribable="0" xmlns="http://zigbee.org/sep">
+	<AssociatedDERProgramListLink all="5" href="/edev/2/prog"/>
+	<AssociatedUsagePointLink href=""/>
+	<CurrentDERProgramLink href="/edev/2/der/1/dera"/>
+	<DERAvailabilityLink href="/edev/2/der/1/dera"/>
+	<DERCapabilityLink href="/edev/2/der/1/dercap"/>
+	<DERSettingsLink href="/edev/2/der/1"/>
+	<DERStatusLink href="/edev/2/der/1/ders"/>
+</DER>

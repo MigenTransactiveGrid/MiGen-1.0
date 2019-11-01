@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<DERStatus href="/edev/4/der/1/ders" subscribable="0" xmlns="http://zigbee.org/sep">
+	<genConnectStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>0</value>
+	</genConnectStatus>
+	<inverterStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>5</value>
+	</inverterStatus>
+	<localControlModeStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>5</value>
+	</localControlModeStatus>
+	<manufacturerStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>Runing</value>
+	</manufacturerStatus>
+	<operationalModeStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>10</value>
+	</operationalModeStatus>
+	<readingTime>1529359130000</readingTime>
+	<stateOfChargeStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>100</value>
+	</stateOfChargeStatus>
+	<storageModeStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>10</value>
+	</storageModeStatus>
+	<storConnectStatus>
+		<dateTime>1529359130000</dateTime>
+		<value>4</value>
+	</storConnectStatus>
+</DERStatus>

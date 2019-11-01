@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<ResponseList all="1" href="/rsps/1/rsp" results="1" xmlns="http://zigbee.org/sep">
+	<Response href="/rsps/1/rsp/1">
+		<createdDateTime>360046159568</createdDateTime>
+		<endDeviceLFDI>6463FAE94907AB89BC2C6A022DA7EE12589F004E</endDeviceLFDI>
+		<status>0</status>
+		<subject>0AAF72054404FFA0ED54C1AB000087B4</subject>
+	</Response>
+</ResponseList>

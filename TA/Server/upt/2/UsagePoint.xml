@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<UsagePoint href="/upt/2" xmlns="http://zigbee.org/sep">
+	<mRID>2925002E586CF46211BA3DBB000087B4</mRID>
+	<description>Test for DemandResponseProgram</description>
+	<roleFlags>0000</roleFlags>
+	<serviceCategoryKind>0</serviceCategoryKind>
+	<status>1</status>
+</UsagePoint>

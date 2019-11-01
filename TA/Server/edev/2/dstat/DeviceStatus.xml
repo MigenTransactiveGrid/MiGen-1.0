@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<DeviceStatus href="/tm" xmlns="http://zigbee.org/sep">
+	<changedTime>1</changedTime>
+	<onCount>1</onCount>
+	<opState>1</opState>
+	<opTime>1</opTime>
+	<Temperature>
+		<multiplier>0</multiplier>
+		<subject>0</subject>
+		<value>24</value>
+	</Temperature>
+</DeviceStatus>

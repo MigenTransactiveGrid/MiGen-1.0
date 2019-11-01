@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<DrResponse href="/rsps/1/rsp/1" xmlns="http://zigbee.org/sep">
+	<createdDateTime>1571202142</createdDateTime>
+	<endDeviceLFDI>4950C3CAB3BC8B34195336F39A57AB59B5BF3943</endDeviceLFDI>
+	<status>0</status>
+	<subject>E7F75C8D2499676C5D1D475B000087B4</subject>
+	<ApplianceLoadReduction>
+		<type>0</type>
+	</ApplianceLoadReduction>
+	<AppliedTargetReduction>
+		<type>0</type>
+		<value>4</value>
+	</AppliedTargetReduction>
+	<DutyCycle>
+		<normalValue>0</normalValue>
+	</DutyCycle>
+	<Offset>
+		<coolingOffset>0</coolingOffset>
+		<heatingOffset>0</heatingOffset>
+		<loadAdjustmentPercentageOffset>0</loadAdjustmentPercentageOffset>
+	</Offset>
+	<overrideDuration>0</overrideDuration>
+	<SetPoint>
+		<coolingSetpoint>27</coolingSetpoint>
+		<heatingSetpoint>19</heatingSetpoint>
+	</SetPoint>
+</DrResponse>

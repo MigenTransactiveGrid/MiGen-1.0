@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<MirrorUsagePoint href="/mup/4" xmlns="http://zigbee.org/sep">
+	<mRID>FFB904408F24A518A0721E12000087B4</mRID>
+	<description>Test for DemandResponseProgram</description>
+	<version>0</version>
+	<roleFlags>0000</roleFlags>
+	<serviceCategoryKind>0</serviceCategoryKind>
+	<status>1</status>
+	<deviceLFDI>828AF2F9BBA54513511291B9F0BCA44EE9B57E01</deviceLFDI>
+	<MirrorMeterReading href="/mup/4">
+		<mRID>FFB904408F24A518A0721E12000087B4</mRID>
+		<description>Test for DemandResponseProgram</description>
+		<version>0</version>
+		<lastUpdateTime>1529359130000</lastUpdateTime>
+		<MirrorReadingSet href="/mup/4">
+			<mRID>FFB904408F24A518A0721E12000087B4</mRID>
+			<description>Test for DemandResponseProgram</description>
+			<version>0</version>
+			<timePeriod>
+				<duration>3600</duration>
+				<start>1529359130000</start>
+			</timePeriod>
+			<Reading href="/upt/4/mr/1/rs/1/r/1" subscribable="0">
+				<consumptionBlock>0</consumptionBlock>
+				<qualityFlags>0000</qualityFlags>
+				<timePeriod>
+					<duration>3600</duration>
+					<start>1529359130000</start>
+				</timePeriod>
+				<touTier>1</touTier>
+				<value>1</value>
+				<localID>0001</localID>
+			</Reading>
+		</MirrorReadingSet>
+		<nextUpdateTime>1529359130000</nextUpdateTime>
+		<Reading href="/upt/4/mr/1/rs/1/r/1" subscribable="0">
+			<consumptionBlock>0</consumptionBlock>
+			<qualityFlags>0000</qualityFlags>
+			<timePeriod>
+				<duration>3600</duration>
+				<start>1529359130000</start>
+			</timePeriod>
+			<touTier>1</touTier>
+			<value>1</value>
+			<localID>0001</localID>
+		</Reading>
+		<ReadingType>
+			<accumulationBehaviour>6</accumulationBehaviour>
+			<calorificValue>
+				<multiplier>0</multiplier>
+				<unit>38</unit>
+				<value>38</value>
+			</calorificValue>
+			<commodity>2</commodity>
+			<conversionFactor>
+				<multiplier>0</multiplier>
+				<unit>38</unit>
+				<value>1</value>
+			</conversionFactor>
+			<dataQualifier>12</dataQualifier>
+			<flowDirection>19</flowDirection>
+			<intervalLength>60</intervalLength>
+			<kind>37</kind>
+			<maxNumberOfIntervals>1</maxNumberOfIntervals>
+			<numberOfConsumptionBlocks>1</numberOfConsumptionBlocks>
+			<numberOfTouTiers>1</numberOfTouTiers>
+			<phase>129</phase>
+			<powerOfTenMultiplier>0</powerOfTenMultiplier>
+			<subIntervalLength>1</subIntervalLength>
+			<supplyLimit>281474976710655</supplyLimit>
+			<tieredConsumptionBlocks>false</tieredConsumptionBlocks>
+			<uom>38</uom>
+		</ReadingType>
+	</MirrorMeterReading>
+</MirrorUsagePoint>

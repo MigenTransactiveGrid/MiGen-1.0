@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<Configuration href="/edev/4/cfg" subscribable="0" xmlns="http://zigbee.org/sep">
+	<currentLocale>CANADA</currentLocale>
+	<PowerConfiguration>
+		<batteryInstallTime>56555655</batteryInstallTime>
+		<lowChargeThreshold>3600</lowChargeThreshold>
+	</PowerConfiguration>
+	<TimeConfiguration>
+		<dstEndRule>380A1A8C</dstEndRule>
+		<dstOffset>3600</dstOffset>
+		<dstStartRule>380A1A8C</dstStartRule>
+		<tzOffset>3600</tzOffset>
+	</TimeConfiguration>
+	<userDeviceName>CA</userDeviceName>
+</Configuration>

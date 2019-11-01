@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<EndDeviceControl href="/dr/1/edc/1" replyTo="/rsps/1/rsp/1" responseRequired="01" subscribable="0" xmlns="http://zigbee.org/sep">
+	<mRID>E7F75C8D2499676C5D1D475B000087B4</mRID>
+	<description>GREAT-DR round# 5</description>
+	<version>0</version>
+	<creationTime>1571198638</creationTime>
+	<EventStatus>
+		<currentStatus>1</currentStatus>
+		<dateTime>1571202108</dateTime>
+		<potentiallySuperseded>false</potentiallySuperseded>
+		<potentiallySupersededTime>0</potentiallySupersededTime>
+		<reason>This is a test for EndDeviceControl</reason>
+	</EventStatus>
+	<interval>
+		<duration>3600</duration>
+		<start>1571169620</start>
+	</interval>
+	<randomizeDuration>99</randomizeDuration>
+	<randomizeStart>11</randomizeStart>
+	<ApplianceLoadReduction>
+		<type>1</type>
+	</ApplianceLoadReduction>
+	<deviceCategory>00000000</deviceCategory>
+	<drProgramMandatory>false</drProgramMandatory>
+	<DutyCycle>
+		<normalValue>50</normalValue>
+	</DutyCycle>
+	<loadShiftForward>true</loadShiftForward>
+	<Offset>
+		<coolingOffset>2</coolingOffset>
+		<heatingOffset>2</heatingOffset>
+		<loadAdjustmentPercentageOffset>1</loadAdjustmentPercentageOffset>
+	</Offset>
+	<overrideDuration>60</overrideDuration>
+	<SetPoint>
+		<coolingSetpoint>22</coolingSetpoint>
+		<heatingSetpoint>20</heatingSetpoint>
+	</SetPoint>
+	<TargetReduction>
+		<type>1</type>
+		<value>209</value>
+	</TargetReduction>
+</EndDeviceControl>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<NeighborList all="1" href="/edev/3/ns/1/ll/1/nbh" results="1" xmlns="http://zigbee.org/sep">
+	<Neighbor href="/edev/3/ns/1/ll/1/nbh/1">
+		<isChild>false</isChild>
+		<linkQuality>1</linkQuality>
+		<shortAddress>1</shortAddress>
+	</Neighbor>
+</NeighborList>

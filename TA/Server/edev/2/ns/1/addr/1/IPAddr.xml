@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<IPAddr href="/edev/2/ns/1/addr/1" xmlns="http://zigbee.org/sep">
+	<address>0000000000000000000000000A07077A</address>
+	<RPLInstanceListLink all="1" href="/edev/2/ns"/>
+</IPAddr>

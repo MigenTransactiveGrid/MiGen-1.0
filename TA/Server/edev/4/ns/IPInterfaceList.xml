@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<IPInterfaceList all="1" href="/edev/4/ns" results="1" xmlns="http://zigbee.org/sep">
+	<IPInterface href="/edev/4/ns/1">
+		<ifDescr>HEMSC IP</ifDescr>
+		<ifHighSpeed>1</ifHighSpeed>
+		<ifInBroadcastPkts>1</ifInBroadcastPkts>
+		<ifIndex>1</ifIndex>
+		<ifInDiscards>1</ifInDiscards>
+		<ifInErrors>1</ifInErrors>
+		<ifInMulticastPkts>1</ifInMulticastPkts>
+		<ifInOctets>1</ifInOctets>
+		<ifInUcastPkts>1</ifInUcastPkts>
+		<ifInUnknownProtos>1</ifInUnknownProtos>
+		<ifMtu>1</ifMtu>
+		<ifName>HEMSC</ifName>
+		<ifOperStatus>1</ifOperStatus>
+		<ifOutBroadcastPkts>1</ifOutBroadcastPkts>
+		<ifOutDiscards>1</ifOutDiscards>
+		<ifOutErrors>1</ifOutErrors>
+		<ifOutMulticastPkts>1</ifOutMulticastPkts>
+		<ifOutOctets>1</ifOutOctets>
+		<ifOutUcastPkts>1</ifOutUcastPkts>
+		<ifPromiscuousMode>true</ifPromiscuousMode>
+		<ifSpeed>1</ifSpeed>
+		<ifType>1</ifType>
+		<IPAddrListLink all="1" href="/edev/4/ns/1/addr"/>
+		<lastResetTime>1520953230</lastResetTime>
+		<lastUpdatedTime>1520953230</lastUpdatedTime>
+		<LLInterfaceListLink all="1" href="/edev/4/ns"/>
+	</IPInterface>
+</IPInterfaceList>

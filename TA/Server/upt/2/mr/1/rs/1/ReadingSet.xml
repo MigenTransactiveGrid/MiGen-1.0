@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<ReadingSet href="/upt/2/mr/1/rs/1" xmlns="http://zigbee.org/sep">
+	<mRID>2925002E586CF46211BA3DBB000087B4</mRID>
+	<description>Test for DemandResponseProgram</description>
+	<version>0</version>
+	<timePeriod>
+		<duration>3600</duration>
+		<start>1529359126000</start>
+	</timePeriod>
+	<ReadingListLink all="1" href="/upt/2/mr/1/rs/1/r"/>
+</ReadingSet>

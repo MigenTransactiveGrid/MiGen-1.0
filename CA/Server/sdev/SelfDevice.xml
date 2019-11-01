@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<SelfDevice href="/edev/1/ps" subscribable="0" xmlns="http://zigbee.org/sep">
+	<loadShedDeviceCategory>00000000</loadShedDeviceCategory>
+	<sFDI>196804763312</sFDI>
+</SelfDevice>

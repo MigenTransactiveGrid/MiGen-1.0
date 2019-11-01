@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<RPLSourceRoutesList all="1" href="/edev/1/ns/1/addr/1/rpl/1/str" results="1" xmlns="http://zigbee.org/sep">
+	<RPLSourceRoutes href="/edev/1/ns/1/addr/1/rpl/1/str/1">
+		<DestAddress>0000000000000000000000000A07077B</DestAddress>
+		<SourceRoute>0000000000000000000000000A07077C</SourceRoute>
+	</RPLSourceRoutes>
+</RPLSourceRoutesList>

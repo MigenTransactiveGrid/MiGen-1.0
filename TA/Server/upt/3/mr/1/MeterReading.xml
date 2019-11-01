@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<MeterReading href="/upt/3/mr/1" xmlns="http://zigbee.org/sep">
+	<mRID>CF363B085A91B7CDF1330285000087B4</mRID>
+	<description>Test</description>
+	<version>0</version>
+	<RateComponentListLink all="1" href="/tp/3/rc"/>
+	<ReadingLink href="/upt/3/mr/1/rs/1/r/1"/>
+	<ReadingSetListLink all="1" href="/upt/3/mr/1/rs/1"/>
+	<ReadingTypeLink href="/upt/3+/mr/1/rt"/>
+</MeterReading>

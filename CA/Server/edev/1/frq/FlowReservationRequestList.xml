@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<FlowReservationRequestList all="1" href="/edev/1/frq" results="1" xmlns="http://zigbee.org/sep">
+	<FlowReservationRequest href="/edev/1/frq/1">
+		<mRID>E7F75C8D2499676C5D1D475B000087B4</mRID>
+		<description>Test</description>
+		<version>0</version>
+		<creationTime>456654464</creationTime>
+		<durationRequested>3600</durationRequested>
+		<energyRequested>
+			<multiplier>0</multiplier>
+			<value>1000</value>
+		</energyRequested>
+		<intervalRequested>
+			<duration>2400</duration>
+			<start>555555</start>
+		</intervalRequested>
+		<powerRequested>
+			<multiplier>0</multiplier>
+			<value>1000</value>
+		</powerRequested>
+		<RequestStatus>
+			<dateTime>555555</dateTime>
+			<requestStatus>0</requestStatus>
+		</RequestStatus>
+	</FlowReservationRequest>
+</FlowReservationRequestList>

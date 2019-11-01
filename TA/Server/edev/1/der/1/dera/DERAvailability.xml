@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<DERAvailability href="/edev/1/der/1/dera" subscribable="0" xmlns="http://zigbee.org/sep">
+	<availabilityDuration>7200</availabilityDuration>
+	<maxChargeDuration>7200</maxChargeDuration>
+	<readingTime>1529359125000</readingTime>
+	<reserveChargePercent>200</reserveChargePercent>
+	<reservePercent>200</reservePercent>
+	<statVArAvail>
+		<multiplier>0</multiplier>
+		<value>-100</value>
+	</statVArAvail>
+	<statWAvail>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</statWAvail>
+</DERAvailability>

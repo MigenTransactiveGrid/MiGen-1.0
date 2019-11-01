@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<LLInterfaceList all="1" href="/edev/1/ns/1/ll" results="1" xmlns="http://zigbee.org/sep">
+	<LLInterface href="/edev/1/ns/1/ll/1">
+		<CRCerrors>1</CRCerrors>
+		<EUI64>000000000A07077B</EUI64>
+		<IEEE_802_15_4>
+			<capabilityInfo>01</capabilityInfo>
+			<NeighborListLink all="1" href="/edev/1/ns/1/ll/1/nbh"/>
+			<shortAddress>123</shortAddress>
+		</IEEE_802_15_4>
+		<linkLayerType>1</linkLayerType>
+		<LLAckNotRx>1</LLAckNotRx>
+		<LLCSMAFail>0</LLCSMAFail>
+		<LLFramesDropRx>1</LLFramesDropRx>
+		<LLFramesDropTx>1</LLFramesDropTx>
+		<LLFramesRx>1</LLFramesRx>
+		<LLFramesTx>1</LLFramesTx>
+		<LLMediaAccessFail>1</LLMediaAccessFail>
+		<LLOctetsRx>1</LLOctetsRx>
+		<LLOctetsTx>1</LLOctetsTx>
+		<LLRetryCount>1</LLRetryCount>
+		<LLSecurityErrorRx>1</LLSecurityErrorRx>
+		<loWPAN>
+			<octetsRx>1</octetsRx>
+			<octetsTx>1</octetsTx>
+			<packetsRx>1</packetsRx>
+			<packetsTx>1</packetsTx>
+			<rxFragError>1</rxFragError>
+		</loWPAN>
+	</LLInterface>
+</LLInterfaceList>

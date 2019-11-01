@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<DeviceCapability href="//dcap" xmlns="http://zigbee.org/sep">
+	<CustomerAccountListLink all="1" href="['/bill']"/>
+	<DemandResponseProgramListLink all="1" href="/dr"/>
+	<DERProgramListLink all="1" href="/derp"/>
+	<FileListLink all="1" href="/file"/>
+	<MessagingProgramListLink all="1" href="/msg"/>
+	<PrepaymentListLink all="1" href="/ppy"/>
+	<ResponseSetListLink all="1" href="/rsps"/>
+	<TariffProfileListLink all="1" href="/tp"/>
+	<TimeLink href="/tm"/>
+	<UsagePointListLink all="1" href="/upt"/>
+	<EndDeviceListLink all="1" href="/edev"/>
+	<MirrorUsagePointListLink all="1" href="/mup"/>
+	<SelfDeviceLink href="/sdev"/>
+</DeviceCapability>

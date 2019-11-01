@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<SupportedLocaleList all="1" href="/edev/4/di/loc" results="1" xmlns="http://zigbee.org/sep">
+	<SupportedLocale href="/edev/4/di/loc/1">
+		<locale>CANADA</locale>
+	</SupportedLocale>
+</SupportedLocaleList>

@@ -1,0 +1,1 @@
+<LoadShedAvailability href="/edev/2/lsa" xmlns="http://zigbee.org/sep"><availabilityDuration>33</availabilityDuration><DemandResponseProgramLink href="/dr/2"/><sheddablePercent>20</sheddablePercent><sheddablePower><multiplier>1</multiplier><value>1000</value></sheddablePower></LoadShedAvailability>

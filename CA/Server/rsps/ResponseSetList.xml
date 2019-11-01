@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ResponseSet href="/rsps" xmlns="http://zigbee.org/sep">
+	<mRID>E7F75C8D2499676C5D1D475B000087B4</mRID>
+	<description>Test for ResponseSetList</description>
+	<version>0</version>
+	<ResponseListLink all="1" href="/rsps/1"/>
+</ResponseSet>

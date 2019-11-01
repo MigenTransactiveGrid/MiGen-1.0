@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<ReadingList all="1" href="/upt/2/mr/1/rs/1/r" results="1" subscribable="0" xmlns="http://zigbee.org/sep">
+	<Reading href="/upt/2/mr/1/rs/1/r/1" subscribable="0">
+		<consumptionBlock>0</consumptionBlock>
+		<qualityFlags>0000</qualityFlags>
+		<timePeriod>
+			<duration>3600</duration>
+			<start>1529359126000</start>
+		</timePeriod>
+		<touTier>1</touTier>
+		<value>1</value>
+		<localID>0001</localID>
+	</Reading>
+</ReadingList>

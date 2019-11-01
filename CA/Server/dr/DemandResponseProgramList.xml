@@ -1,0 +1,12 @@
+<DemandResponseProgramList xmlns="http://zigbee.org/sep" all="1" href="/dr" results="1" subscribable="0"><DemandResponseProgram href="/dr/1"><mRID>E7F75C8D2499676C5D1D475B000087B4</mRID>
+	<description>GREAT-DR round# 634</description>
+	<version>0</version>
+	<ActiveEndDeviceControlListLink all="1" href="/dr/1/actedc" />
+	<availabilityUpdatePercentChangeThreshold>1</availabilityUpdatePercentChangeThreshold>
+	<availabilityUpdatePowerChangeThreshold>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</availabilityUpdatePowerChangeThreshold>
+	<EndDeviceControlListLink all="1" href="/dr/1/edc" />
+	<primacy>1</primacy>
+</DemandResponseProgram></DemandResponseProgramList>

@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<DERSettings href="/edev/1/der/1/derg" subscribable="0" xmlns="http://zigbee.org/sep">
+	<setGenConnect>true</setGenConnect>
+	<setGradW>50</setGradW>
+	<setMaxChargeRate>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</setMaxChargeRate>
+	<setMaxDischargeRate>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</setMaxDischargeRate>
+	<setMaxVA>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</setMaxVA>
+	<setMaxVAr>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</setMaxVAr>
+	<setMaxVArNeg>
+		<multiplier>0</multiplier>
+		<value>-100</value>
+	</setMaxVArNeg>
+	<setMaxW>
+		<multiplier>0</multiplier>
+		<value>1000</value>
+	</setMaxW>
+	<setMinPF>
+		<multiplier>-3</multiplier>
+		<value>900</value>
+	</setMinPF>
+	<setMinPFNeg>
+		<multiplier>-3</multiplier>
+		<value>900</value>
+	</setMinPFNeg>
+	<setStorConnect>true</setStorConnect>
+	<setVRef>
+		<multiplier>1</multiplier>
+		<value>110</value>
+	</setVRef>
+	<setVRefOfs>
+		<multiplier>1</multiplier>
+		<value>110</value>
+	</setVRefOfs>
+	<updatedTime>1544212995000</updatedTime>
+</DERSettings>

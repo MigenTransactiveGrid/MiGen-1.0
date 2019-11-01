@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LogEventList all="1" href="/edev/3/lel" results="1" xmlns="http://zigbee.org/sep">
+	<LogEvent href="/edev/3/lel/1">
+		<createdDateTime>360046159568</createdDateTime>
+		<extendedData>0</extendedData>
+		<functionSet>6</functionSet>
+		<logEventCode>0</logEventCode>
+		<logEventID>1</logEventID>
+		<logEventPEN>0</logEventPEN>
+		<profileID>3</profileID>
+	</LogEvent>
+</LogEventList>

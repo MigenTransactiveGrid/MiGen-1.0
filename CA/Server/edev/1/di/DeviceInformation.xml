@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<DeviceInformation href="/edev/1/di" xmlns="http://zigbee.org/sep">
+	<DRLCCapabilities>
+		<averageEnergy>
+			<multiplier>0</multiplier>
+			<value>10</value>
+		</averageEnergy>
+		<maxDemand>
+			<multiplier>0</multiplier>
+			<value>10</value>
+		</maxDemand>
+		<optionsImplemented>00000001</optionsImplemented>
+	</DRLCCapabilities>
+	<functionsImplemented>0000000100000101</functionsImplemented>
+	<lFDI>4950C3CAB3BC8B34195336F39A57AB59B5BF3943</lFDI>
+	<mfDate>1544212996000</mfDate>
+	<mfHwVer>1</mfHwVer>
+	<mfID>55555</mfID>
+	<mfInfo>GREAT-DR1-CA</mfInfo>
+	<mfModel>V1.0</mfModel>
+	<mfSerNum>10001</mfSerNum>
+	<primaryPower>1</primaryPower>
+	<secondaryPower>2</secondaryPower>
+	<SupportedLocaleListLink all="1" href="/local"/>
+	<swActTime>1544212996000</swActTime>
+	<swVer>0.01</swVer>
+</DeviceInformation>

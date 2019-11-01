@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<FlowReservationResponseList all="1" href="/edev/3/frp" results="1" subscribable="0" xmlns="http://zigbee.org/sep">
+	<FlowReservationResponse href="/edev/3/frp/1" replyTo="" responseRequired="01" subscribable="0">
+		<mRID>CF363B085A91B7CDF1330285000087B4</mRID>
+		<description>Test</description>
+		<version>0</version>
+		<creationTime>1529359129000</creationTime>
+		<EventStatus>
+			<currentStatus>0</currentStatus>
+			<dateTime>1529359129000</dateTime>
+			<potentiallySuperseded>false</potentiallySuperseded>
+			<potentiallySupersededTime>1529359129000</potentiallySupersededTime>
+			<reason>This is a test for EndDeviceControl</reason>
+		</EventStatus>
+		<interval>
+			<duration>3600</duration>
+			<start>1529359129000</start>
+		</interval>
+		<energyAvailable>
+			<multiplier>1</multiplier>
+			<value>1000</value>
+		</energyAvailable>
+		<powerAvailable>
+			<multiplier>1</multiplier>
+			<value>1000</value>
+		</powerAvailable>
+		<subject>11000000000000341000000000000034</subject>
+	</FlowReservationResponse>
+</FlowReservationResponseList>

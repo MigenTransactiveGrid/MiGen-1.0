@@ -1,0 +1,14 @@
+<FunctionSetAssignmentsList xmlns="http://zigbee.org/sep" all="1" href="/edev/1/fsa" results="1" subscribable="0"><FunctionSetAssignments href="/edev/1/fsa/1"><CustomerAccountListLink all="1" href="/bill" />
+	<DemandResponseProgramListLink all="1" href="/dr" />
+	<DERProgramListLink all="1" href="/derp" />
+	<FileListLink all="1" href="/file" />
+	<MessagingProgramListLink all="1" href="/msg" />
+	<PrepaymentListLink all="1" href="/ppy" />
+	<ResponseSetListLink all="1" href="/rsps" />
+	<TariffProfileListLink all="1" href="/tp" />
+	<TimeLink href="/tm" />
+	<UsagePointListLink all="1" href="/upt" />
+	<mRID>E7F75C8D2499676C5D1D475B000087B4</mRID>
+	<description>Test for DemandResponseProgram</description>
+	<version>0</version>
+</FunctionSetAssignments></FunctionSetAssignmentsList>

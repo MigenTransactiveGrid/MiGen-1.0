@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<PriceResponseCfg href="/edev/4/prcfg/1" xmlns="http://zigbee.org/sep">
+	<consumeThreshold>1000</consumeThreshold>
+	<maxReductionThreshold>2000</maxReductionThreshold>
+	<RateComponentLink href="/tp/4/rc/1"/>
+</PriceResponseCfg>

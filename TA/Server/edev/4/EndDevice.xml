@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<EndDevice href="/edev/4/ns" subscribable="0" xmlns="http://zigbee.org/sep">
+	<ConfigurationLink href="/edev/cfg"/>
+	<DeviceInformationLink href="/edev/4/di"/>
+	<DeviceStatusLink href="/edev/4/dstat"/>
+	<FileStatusLink href="/edev/4/fs"/>
+	<LoadShedAvailabilityLink href="/edev/4/lsa"/>
+	<loadShedDeviceCategory>00100000</loadShedDeviceCategory>
+	<LogEventListLink all="0" href="/edev/4/lel"/>
+	<PowerStatusLink href="/edev/4/ps"/>
+	<sFDI>350423079957</sFDI>
+	<FlowReservationRequestListLink all="1" href="/edev/4/frq"/>
+	<FlowReservationResponseListLink all="1" href="/edev/4/frp"/>
+	<FunctionSetAssignmentsListLink all="1" href="/edev/4/fsa"/>
+	<RegistrationLink href="/edev/4/rg"/>
+	<SubscriptionListLink all="1" href="/edev/4/sub"/>
+</EndDevice>

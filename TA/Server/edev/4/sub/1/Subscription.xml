@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Subscription href="/edev/4/sub/1" xmlns="http://zigbee.org/sep">
+	<subscribedResource>/upt/4/mr/1/r</subscribedResource>
+	<Condition>
+		<attributeIdentifier>0</attributeIdentifier>
+		<lowerThreshold>10</lowerThreshold>
+		<upperThreshold>1000</upperThreshold>
+	</Condition>
+	<encoding>0</encoding>
+	<level>+S0</level>
+	<limit>1</limit>
+	<notificationURI>/ntfy/1</notificationURI>
+</Subscription>
