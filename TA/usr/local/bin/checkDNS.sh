@@ -1,10 +1,10 @@
-####################
+#################### #################### ####################
 # Shell script that checks Internet connectivity and DSN Resolution.
 # Pings one of the known google.com DNS servers.
 # If connection is lost, the pppd command is used to re-establish the LTE connection to tower.
 # Logging could also be used [optional] for monitoring and performance analysis
 # Ismael AlShiab
-####################
+#################### #################### ####################
 ping -c 4 8.8.8.8
 now=$(date  "+%d/%m/%y  %H %M")  
 
