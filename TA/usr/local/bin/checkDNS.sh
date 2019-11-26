@@ -1,19 +1,18 @@
-#echo "\n" >> /home/pi/com_per/testDNSSC0.txt
-ping -c 4 8.8.8.8 
-#>> /home/pi/com_per/testDNSSC0.txt 
+####################
+# Shell script that checks Internet connectivity and DSN Resolution.
+# Pings one of the known google.com DNS servers.
+# If connection is lost, the pppd command is used to re-establish the LTE connection to tower.
+# Logging could also be used [optional] for monitoring and performance analysis
+# Ismael AlShiab
+####################
+ping -c 4 8.8.8.8
+now=$(date  "+%d/%m/%y  %H %M")  
 
 if [ $? != 0 ]
 then   
-	now=$(date  "+%d/%m/%y  %H %M") 
-	echo "$now DNS connection lost, running the pppd command"  >> /home/pi/com_per/testDNSSC0.txt
+	echo "$now DNS connection lost, running the pppd command"  >> logFilePath/LogFileName
 	sudo pppd call gprs persist
-#	sleep(4)
-#	sudo openvpn /home/pi/TA/BOS/bos.vpn	
-	#sudo /sbin/shutdown -r now
-	
 else
- 	now=$(date  "+%d/%m/%y  %H %M") >> /home/pi/com_per/testDNSSC0.txt
- 	
-	echo "$now DNS connection is functional"  >> /home/pi/com_per/testDNSSC0.txt
+	echo "$now DNS connection is functional"  >> logFilePath/LogFileName
 fi
 
