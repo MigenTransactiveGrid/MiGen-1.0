@@ -223,13 +223,13 @@ The Wi-Fi Mesh communication is based on the HSMM-PI project.
 
 ### Step 1: HSMM-PI along with the OLSR: The HSMM-PI is an open source project and could be installed by following the steps below:
 
-1. It could be downloaded by running the following commands [4]:
+1. Download HSMM-PI by running the following commands:
 ```
 sudo apt-get install -y git
 git clone https://github.com/ismaelalshiab/hsmm-pi.git
 cd hsmm-pi
 ```
-2. Run the following command
+2. Run the install.sh
 ```
 sh install.sh
 ```
