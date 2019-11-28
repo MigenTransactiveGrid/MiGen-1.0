@@ -198,9 +198,9 @@ sudo ./install.sh
 ```
 ## Step 2:
 During the ppp-creator installation, it asks several questions to complete the installation process. The answers to the questions based on the used hardware are reported inside the square brackets [ ]. In addition, The following figure 2 and Figure 3 are included for guidance. The questions/selections as follwoing :
-●       Please choose your Sixfab Shield/HAT [select 2]. The required scripts for the selected shield will be fetched.
-●       What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “APN-NAME”.
-●       Does your carrier need username and password? [select n] For Bell Jasper SIM cards, there is no need for username and password.
-●       What is your device communication PORT? [For 3G, 4G/LTE Base Shield enter “ttyUSB3”]
-●       Do you want to activate auto-connect/reconnect service at RPi boot up? [select Y] allows the connection to the Internet automatically when the RPI boot up.
+*       Please choose your Sixfab Shield/HAT [select 2]. The required scripts for the selected shield will be fetched.
+*       What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “APN-NAME”.
+*       Does your carrier need username and password? [select n] For Bell Jasper SIM cards, there is no need for username and password.
+*       What is your device communication PORT? [For 3G, 4G/LTE Base Shield enter “ttyUSB3”]
+*       Do you want to activate auto-connect/reconnect service at RPi boot up? [select Y] allows the connection to the Internet automatically when the RPI boot up.
 
