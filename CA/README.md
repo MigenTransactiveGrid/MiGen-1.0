@@ -229,13 +229,8 @@ crontab -e
 
 2. Add the following crontab rules
 
-a) Required:
 ```
 @reboot sleep 15 &&  /usr/local/bin/routes.sh
-```
-
-b) Optional:
-```
-*/15 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh  2>&1
+*/15 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh 
 ```
 
