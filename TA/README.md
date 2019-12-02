@@ -222,8 +222,8 @@ The table below summarizes some of the commands that might be needed and the fun
 ## Setting up the connection between the TA and the Wi-Fi mesh network
 The communication between the TA and CAs uses Wi-Fi Mesh. In this project we based the solution on the HSMM-PI project. Moreover, we added additional scripts and configurations to make the mesh implementation better suits the Migen requirements and the IEEE 2030.5 standard. 
 
-### Step 1: HSMM-PI along with the OLSR: The HSMM-PI is an open source project and could be installed by following the steps below:
-
+### Step 1: HSMM-PI along with the OLSR
+The HSMM-PI is an open source project and could be installed by following the steps below:
 1. Download HSMM-PI by running the following commands:
 ```
 sudo apt-get install -y git
