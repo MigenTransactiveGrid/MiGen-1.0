@@ -182,7 +182,7 @@ Save and Exit by pressing Ctrl+X to exit nano editor followed by Y to save the f
 $ sed -i 's/\r$//' great_dr_start.sh
 ```
 
-## Setting up the  Wi-Fi mesh connection between the CA and the TA
+## Setting up the  Wi-Fi mesh connection
 The communication between the CAs and TA uses Wi-Fi Mesh. In this project we based the solution on the HSMM-PI project. Moreover, we added additional scripts and configurations to make the mesh implementation better suits the Migen requirements and the IEEE 2030.5 standard.
 
 ### Step 1: HSMM-PI along with the OLSR
