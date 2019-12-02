@@ -220,7 +220,7 @@ Figure 2: sixfab shield software installation steps for RPi – part II
 The table below summarizes some of the commands that might be needed and the function of each command to establish/disconnect the 4G/LTE communication.
 <img width="854" alt="Screen Shot 2019-11-27 at 10 02 10 PM" src="https://user-images.githubusercontent.com/23392778/69773724-9c4ccc00-1161-11ea-9587-95c580893633.png">
 
-## Setting up the connection between the TA and the Wi-Fi mesh network
+## Setting up the Wi-Fi mesh connection
 The communication between the TA and CAs uses Wi-Fi Mesh. In this project we based the solution on the HSMM-PI project. Moreover, we added additional scripts and configurations to make the mesh implementation better suits the Migen requirements and the IEEE 2030.5 standard. 
 
 ### Step 1: HSMM-PI along with the OLSR
