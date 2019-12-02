@@ -189,7 +189,8 @@ Save and Exit by pressing Ctrl+X to exit nano editor followed by Y to save the f
 $ sed -i 's/\r$//' great_dr_start.sh
 ```
 
-## Setting up the LTE connection between the TA and BOS 
+## Setting up the LTE connection between the TA and BOS
+To setup the LTE connection between the TA and the BOS, the needed scripts and commands shall be executed to enable the Sixfab shield as per the following commands/steps:
 1. Clone the repository
 ```
 git clone https://github.com/sixfab/Sixfab_PPP_Installer.git
