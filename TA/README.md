@@ -265,8 +265,7 @@ crontab -e
 ```
 
 2. Add the following crontab rules
-
-a) Required:
+The following scripts enables the VPN connectivity, add the needed static routes, and continuously check and log the DNS and Mesh reachability. The logging is optional and could be used for monitoring and performance analysis.
 ```
 @reboot sleep 15 && /usr/local/bin/vpnUP.sh
 @reboot sleep 15 &&  /usr/local/bin/routes.sh
