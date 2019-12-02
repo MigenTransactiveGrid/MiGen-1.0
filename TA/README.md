@@ -202,7 +202,7 @@ cd Sixfab_PPP_Installer/ppp_installer
 chmod +x install.sh
 sudo ./install.sh
 ```
-
+Note: In case of any problems with the ppp-creator.sh, a copy is provided along with the scripts in  Migen1.0/TA/ComScripts 
 Afterwards, several questions will be asked to complete the installation process. The answers to the questions are based on the used hardware and are reported inside the square brackets [ ]. Figure 1 and Figure 2 are included for guidance. The questions are:
 * Please choose your Sixfab Shield/HAT [select 2]. The required scripts for the selected shield will be fetched.
 * What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “APN_NAME”.
@@ -250,7 +250,7 @@ Figure 3: Updating the network configuration of the Ethernet and Wi-Fi interface
 cp NAME_OF_SHELL_SCRIPT /usr/local/bin/
 ```
 
-2. After installing the mesh on the TA, the routes.sh, checkMesh.sh, checkDNS.sh, and the ppp-creator.sh shell scripts in /usr/local/bin should be given 775 privilege mode using
+2. After installing the mesh on the TA, the routes.sh, checkMesh.sh, and checkDNS.sh shell scripts in /usr/local/bin should be given 775 privilege mode using
 ```
 sudo chmod 775 NAME_OF_SHELL_SCRIPT.
 ```
