@@ -268,12 +268,8 @@ crontab -e
 
 a) Required:
 ```
+@reboot sleep 15 && /usr/local/bin/vpnUP.sh
 @reboot sleep 15 &&  /usr/local/bin/routes.sh
 */2 * * * * /usr/bin/sudo -H /usr/local/bin/checkDNS.sh
+*/5 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh 
 ```
-
-b) Optional:
-```
-*/15 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh  2>&1
-```
-
