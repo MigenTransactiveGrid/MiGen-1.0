@@ -204,7 +204,7 @@ sudo ./install.sh
 
 Afterwards, several questions will be asked to complete the installation process. The answers to the questions are based on the used hardware and are reported inside the square brackets [ ]. Figure 1 and Figure 2 are included for guidance. The questions are:
 * Please choose your Sixfab Shield/HAT [select 2]. The required scripts for the selected shield will be fetched.
-* What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “ermstatic.bell.ca.ioe”.
+* What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “APN_NAME”.
 * Does your carrier need username and password? [select n] For Bell Jasper SIM cards, there is no need for a username and password.
 * What is your device communication PORT? [For 3G, 4G/LTE Base Shield enter “ttyUSB3”]
 * Do you want to activate auto-connect/reconnect service at RPi boot up? [select Y] This option allows the connection to the Internet via the shield automatically when the RPI boots up.
