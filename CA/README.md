@@ -1,7 +1,60 @@
 # CA © 2016–2018 HydroOttawa.
 	
 >PROPIETARY AND CONFIDENTIAL This document contains proprietary and confidential intellectual property owned by HydroOttawa, as provided for under the Copyright Act of Canada 2012, andl not be disclosed except with written permission from HydroOttawa or University of Ottawa. 
-	
+
+The first part shows the needed steps to setup the communication at the CA side.
+## Setting up the  Wi-Fi mesh connection
+The communication between the CAs and TA uses Wi-Fi Mesh. In this project we based the solution on the HSMM-PI project. Moreover, we added additional scripts and configurations to make the mesh implementation better suits the Migen requirements and the IEEE 2030.5 standard.
+
+### Step 1: HSMM-PI along with the OLSR
+The HSMM-PI is an open source project and could be installed by following the steps below:
+
+1. Download HSMM-PI by running the following commands:
+```
+sudo apt-get install -y git
+git clone https://github.com/ismaelalshiab/hsmm-pi.git
+cd hsmm-pi
+```
+2. Run the install.sh
+```
+sh install.sh
+```
+
+3. After installing the HSMM-Pi, the network configuration for the Ethernet and Wi-Fi interfaces should be modified according to the figure below using the following command
+```
+sudo nano /etc/network/interface
+```
+
+Figure 3: Updating the network configuration of the Ethernet and Wi-Fi interfaces
+![Picture3](https://user-images.githubusercontent.com/23392778/69774089-df5b6f00-1162-11ea-99eb-21173d72f71a.png)
+
+### Step 2: Scripts
+1. From the repository, copy all scripts under Migen1.0/CA/ComScripts to /usr/local/bin:
+
+```
+cp NAME_OF_SHELL_SCRIPT /usr/local/bin/
+```
+
+2. After installing the mesh on the CA, the routes.sh, and checkMesh.sh shell scripts in /usr/local/bin should be given 775 privilege mode using
+```
+sudo chmod 775 NAME_OF_SHELL_SCRIPT.
+```
+
+### Step 3: Crontab Rules
+
+1. Open the Crontab file by executing this command 
+
+```
+crontab -e
+```
+
+2. Add the following crontab rules
+
+```
+@reboot sleep 15 &&  /usr/local/bin/routes.sh
+*/15 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh 
+```
+
 	
 ### before starting anything make sure the time and date is set  
   
@@ -181,56 +234,3 @@ Save and Exit by pressing Ctrl+X to exit nano editor followed by Y to save the f
 ```
 $ sed -i 's/\r$//' great_dr_start.sh
 ```
-
-## Setting up the  Wi-Fi mesh connection
-The communication between the CAs and TA uses Wi-Fi Mesh. In this project we based the solution on the HSMM-PI project. Moreover, we added additional scripts and configurations to make the mesh implementation better suits the Migen requirements and the IEEE 2030.5 standard.
-
-### Step 1: HSMM-PI along with the OLSR
-The HSMM-PI is an open source project and could be installed by following the steps below:
-
-1. Download HSMM-PI by running the following commands:
-```
-sudo apt-get install -y git
-git clone https://github.com/ismaelalshiab/hsmm-pi.git
-cd hsmm-pi
-```
-2. Run the install.sh
-```
-sh install.sh
-```
-
-3. After installing the HSMM-Pi, the network configuration for the Ethernet and Wi-Fi interfaces should be modified according to the figure below using the following command
-```
-sudo nano /etc/network/interface
-```
-
-Figure 3: Updating the network configuration of the Ethernet and Wi-Fi interfaces
-![Picture3](https://user-images.githubusercontent.com/23392778/69774089-df5b6f00-1162-11ea-99eb-21173d72f71a.png)
-
-### Step 2: Scripts
-1. From the repository, copy all scripts under Migen1.0/CA/ComScripts to /usr/local/bin:
-
-```
-cp NAME_OF_SHELL_SCRIPT /usr/local/bin/
-```
-
-2. After installing the mesh on the CA, the routes.sh, and checkMesh.sh shell scripts in /usr/local/bin should be given 775 privilege mode using
-```
-sudo chmod 775 NAME_OF_SHELL_SCRIPT.
-```
-
-### Step 3: Crontab Rules
-
-1. Open the Crontab file by executing this command 
-
-```
-crontab -e
-```
-
-2. Add the following crontab rules
-
-```
-@reboot sleep 15 &&  /usr/local/bin/routes.sh
-*/15 * * * * /usr/bin/sudo -H /usr/local/bin/checkMesh.sh 
-```
-
