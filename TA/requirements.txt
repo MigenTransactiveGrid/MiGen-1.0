@@ -6,7 +6,7 @@ pyModbusTCP
 win_inet_pton
 pyserial==2.7
 xmltodict==0.11.0
-requests==2.4.3
+requests==2.20.0
 suds-jurko==0.6
 pyxb==1.2.5
 spidev==3.3
