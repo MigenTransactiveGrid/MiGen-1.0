@@ -1,6 +1,4 @@
-# CA © 2016–2018 HydroOttawa.
-	
->PROPIETARY AND CONFIDENTIAL This document contains proprietary and confidential intellectual property owned by HydroOttawa, as provided for under the Copyright Act of Canada 2012, andl not be disclosed except with written permission from HydroOttawa or University of Ottawa. 
+# 
 
 The first part shows the needed steps to setup the communication at the CA side.
 ## Setting up the  Wi-Fi mesh connection
