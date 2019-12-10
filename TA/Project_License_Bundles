@@ -1,0 +1,38 @@
+This product bundles NumPy, which is available under a OSI Approved (BSD) license. For details see, https://pypi.org/project/numpy/
+This product bundles scikit-learn, which is available under a OSI Approved (new BSD) license. For details see, https://pypi.org/project/scikit-learn/
+This product bundles pandas, which is available under a BSD license. For details see, https://pypi.org/project/pandas/
+This product bundles flake8, which is available under a MIT License (MIT). For details see, https://pypi.org/project/flake8/
+This product bundles pyModbusTCP, which is available under a MIT license. For details see, https://pypi.org/project/pyModbusTCP/
+This product bundles win_inet_pton, which is released into the public domain. Anyone is free to copy. For details see, https://pypi.org/project/win-inet-pton/
+This product bundles pyserial version 2.7, which is available under a Python Software Foundation License (Python). For details see, https://pypi.org/project/pyserial/2.7/
+This product bundles xmltodict version 0.11.0, which is available under a MIT License (MIT). For details see, https://pypi.org/project/xmltodict/0.11.0/
+This product bundles requests version 2.4.3, which is available under an Apache Software License (Apache 2.0). For details see, https://pypi.org/project/requests/2.4.3/
+This product bundles suds-jurko version 0.6, which is available under a GNU Library or Lesser General Public License (LGPL). For details see, https://pypi.org/project/suds-jurko/
+This product bundles PyXB version 1.2.5, which is available under an Apache Software License (Apache License 2.0). For details see, https://pypi.org/project/PyXB/1.2.5/
+This product bundles spidev, which is available under a GNU General Public License v2 (GPLv2) (GPLv2). For details see, https://pypi.org/project/spidev/
+This product bundles bcrypt version 3.1.3, which is available under an Apache License, Version 2.0. For details see, https://pypi.org/project/bcrypt/3.1.3/
+This product bundles cffi version 1.11.2, which is available under a MIT license. For details see,https://pypi.org/project/cffi/1.11.2/
+This product bundles click version 6.7, which is available under a BSD License. For details see, https://pypi.org/project/click/6.7/
+This product bundles decorator version 4.1.2, which is available under a BSD License (new BSD License). For details see, https://pypi.org/project/decorator/4.1.2/
+This product bundles flake8 version 3.5.0, which is available under a MIT license. For details see, https://pypi.org/project/flake8/3.5.0/
+This product bundles Flask version 0.12.2, which is available under a BSD License (BSD). For details see, https://pypi.org/project/Flask/0.12.2/
+This product bundles Flask-JWT version 0.3.2, which is available under a MIT license. For details see, https://pypi.org/project/Flask-JWT/
+This product bundles Flask-SQLAlchemy version 2.2, which is available under a BSD license. For details see, https://pypi.org/project/Flask-SQLAlchemy/2.2/
+This product bundles itsdangerous version 0.24, which is available under a BSD License. For details see, https://pypi.org/project/itsdangerous/0.24/
+This product bundles Jinja2 version 2.9.6 , which is available under a BSD license. For details see, https://pypi.org/project/Jinja2/2.9.6/
+This product bundles MarkupSafe version 1.0, which is available under a BSD license. For details see, https://pypi.org/project/MarkupSafe/1.0/
+This product bundles mccabe version 0.6.1, which is available under a MIT license. For details see, https://pypi.org/project/mccabe/
+This product bundles pbr version 3.1.1, which is available under an Apache Software License. For details see, https://pypi.org/project/pbr/3.1.1/
+This product bundles pycodestyle version 2.3.1, which is available under a MIT license. For details see, https://pypi.org/project/pycodestyle/2.3.1/
+This product bundles pycparser version 2.18, which is available under a BSD license. For details see, https://pypi.org/project/pycparser/2.18/
+This product bundles pyflakes version 1.6.0, which is available under a MIT license. For details see, https://pypi.org/project/pyflakes/1.6.0/
+This product bundles PyJWT version 1.4.2, which is available under a MIT license. For details see, https://pypi.org/project/PyJWT/1.4.2/
+This product bundles python-dateutil version 2.6.1, which is available under a BSD License (Simplified BSD). For details see, https://pypi.org/project/python-dateutil/2.6.1/
+This product bundles PyYAML version 3.12, which is available under a MIT license. For details see, https://pypi.org/project/PyYAML/3.12/
+This product bundles six version 1.10.0, which is available under a MIT license. For details see, https://pypi.org/project/six/1.10.0/
+This product bundles SQLAlchemy version 1.1.14, which is available under a MIT license. For details see, https://pypi.org/project/SQLAlchemy/1.1.14/
+This product bundles sqlalchemy-migrate version 0.11.0, which is available under an Apache Software License. For details see, https://pypi.org/project/sqlalchemy-migrate/0.11.0/
+This product bundles sqlalchemy_seed version 0.1.1, which is available under a BSD license. For details see, https://pypi.org/project/sqlalchemy_seed/0.1.1/
+This product bundles sqlparse version 0.2.3, which is available under a BSD license. For details see, https://pypi.org/project/sqlparse/0.2.3/
+This product bundles Tempita version 0.5.2, which is available under a MIT license. For details, see pypi.org/project/Tempita/.
+This product bundles Werkzeug 0.12.2, which is available under a  BSD license. For details see, https://pypi.org/project/Werkzeug/0.12.2/
