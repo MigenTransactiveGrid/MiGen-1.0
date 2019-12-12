@@ -1,0 +1,309 @@
+
+
+Hydro Ottawa Limited
+MiGen Transactive Grid
+TA & CA-HEMSC
+Operation, Maintenance
+& Safety Requirements Manual
+ 
+Hydro Ottawa Limited
+ MiGen Transactive Grid
+TA & CA-HEMSC
+Operation, Maintenance
+& Safety Requirements Manual
+
+
+
+
+
+
+	Prepared by:		______________________________
+Alique Langlois, Technologist
+
+
+
+
+
+
+	Verified by:		______________________________
+Eric Cantin, Technologist 
+
+
+
+
+
+
+	Approved by:		______________________________
+Réjean Langlois, P.Eng.
+PEO. membership number: 100098205
+
+ 
+110–240 Catherine Street
+Ottawa, ON K2P 2G8
+T 613 860-2462 F 613 860-1870
+
+CIMA+ file number: A000597B
+
+ 
+ 
+
+CONTRIBUTION NOTICE PROVISION
+
+
+
+
+
+
+
+Contributed by CIMA Canada Inc. (the “Contributor”)
+
+Copyright 2019 Hydro Ottawa (the “Licensor”)
+
+Licensed under the MiGen Open Source License (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+       https://github.com/MigenTransactiveGrid/MiGen1.0/blob/master/LICENSE 
+
+Unless required by applicable law or agreed to in writing, all software, drawings, and any other material contributed by Contributor, and distributed by Licensor, under the License are contributed or distributed, as applicable, on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including NO WARRANTY with respect to use or fitness of this file FOR any purpose, including NON-INFRINGEMENT OF INTELLECTUAL PROPERTY, COMPLIANCE WITH PRIVACY LEGISLATION, PROTECTION FROM SECURITY VULNERABILITIES, or COMPLIANCE WITH ANY GOVERNMENT STANDARD.
+
+See the License for the specific language governing permissions, disclaimer of warranty, limitation of liability and other limitations under the License. 
+
+ 
+
+REVIEW AND SUBMITTAL REGISTER
+Revision	Reviewed By	Date	Description of the change or Submittal
+0	E. Cantin	Dec 11th, 2019	Official release
+			
+			
+			
+
+
+
+ 
+TABLE OF CONTENTS
+
+Page
+1.	OBJECTIVE	7
+2.	REFERENCE DOCUMENTS	7
+3.	SCOPE	8
+3.1	APPROVAL FOR USE IN ONTARIO	8
+3.2	APPROVAL FOR USE OUTSIDE OF ONTARIO, CANADA	8
+4.	DEFINING OF A QUALIFIED PERSON	9
+5.	PHYSICAL INSPECTIONS	9
+5.1	ENCLOSURE CONDITIONS	9
+5.2	VENTILATION FILTER CONDITIONS	9
+5.3	SIGNS OF BURNING OR OVERHEATING	9
+5.4	ANTENNA AND ANTENNA MAST	10
+6.	ELECTRICAL VERIFICATION	10
+6.1	FUSES	10
+6.2	TA ANTI- CONDENSATION ELEMENT	10
+6.3	TA THERMOSTAT SETTING TO TRIGGER VENTILATION	10
+6.4	VOLTAGE SOURCES ARE PRESENT WHEN ACTIVE	11
+7.	COMMUNICATION SYSTEMS INCLUDING SOFTWARE	11
+7.1	COMMUNICATION SYSTEMS	11
+7.1.1	TA	11
+7.1.1.1	TA – 4G/LTE Communication	11
+o	Hardware	11
+o	Software	13
+7.1.1.2	TA - Wi-Fi Mesh Communication	15
+o	Hardware	15
+o	Software	16
+7.1.2	CA	18
+7.1.3	CA – Wi-Fi Mesh Communication	18
+o	Hardware	18
+o	Software	18
+8.	ARC FLASH ENERGY LEVELS	19
+8.1	TA	19
+8.2	CA-HEMSC	19
+9.	COMPONENTS IN ENCLOSURES	19
+9.1	TA, CA-HEMSC	19
+
+ 
+1.	OBJECTIVE
+The Transformer/Transactive Agent (TA) and Customer Agent (CA) - Home Energy Management System Controller (HEMSC) units installed during the MiGen project require maintenance due to component requirements or the environmental conditions to which they are subjected.
+
+This document outlines the tasks to be undertaken, along with the safety qualifications required to perform these tasks. This document provides guidelines and recommendations and it must be used in conjunction with appropriate qualifications to perform the work, and address potential dangers.
+
+This manual will also define the technical requirements for some of the equipment and the material needed to do the aforementioned tasks.
+2.	REFERENCE DOCUMENTS
+The following reference documents complement the information provided in this document:
++	The MiGen Requirements and System Architecture Document
++	Data Management Document
++	Software Manual & Repository
+1-	Software repository: https://github.com/MigenTransactiveGrid/Migen1.0
+2-	sixFab, “Quectel EC25 Mini PCle 4G/LTE Module”. 2019. [Online] Available: https://sixfab.com/product/quectel-ec25-mini-pcle-4glte-module/
+3-	sixFab, “GSM 2G/3G Antenna – u.FL PCB Antenna – 0dBi”. 2019. [Online] Available: https://sixfab.com/product/gsm-2g-3g-antenna-u-fl-pcb-antenna-0dbi/ 
+4-	proxicast, “Vandal Resistant Low Profile 2.4/5.8 GHz Wi-Fi Antenna - 3-5 dBi Gain - Fixed Mount - 10 ft coax lead”. [Online] Available: https://shop.proxicast.com/shopping/vandal-resistant-low-profile-2.4-5.8-ghz-wi-fi-antenna-3-5-dbi-gain-fixed-mount-10-ft-coax-lead.html
+5-	HSMM-PI, “hsmm-pi”. [Online] Available https://github.com/urlgrey/hsmm-pi
+6-	Siretta, “Extension Cables”. 2019 [Online] Available: https://www.siretta.com/products/rf-cables/extension-cables/
+7-	MeasurLogic DTS310 Manual:  https://www.measurlogic.com/wp-content/uploads/2017/01/DTS-310-Installation-Guide_R17A.pdf
+8-	RaspberryPi:  https://www.raspberrypi.org/documentation/installation/ 
+9-	Dell Power Companion PW7015M:  https://downloads.dell.com/Manuals/all-products/esuprt_electronics/esuprt_portable_power_companion/dell-portable-power-companion-pw7015m_service%20manual_en-us.pdf
+10-	Netgear FS205 Ethernet Unmanaged Switch:   https://www.netgear.com/support/product/FS205.aspx 
+3.	SCOPE
+This document covers the minimum requirements for the maintenance of the TA and CA-HEMSC. For the operation of MiGen physical elements to ensure they are capable of performing their function, if the system is down / offline, identify the sequence to bring the system back online and/or resolve minor operation issues.
+ 
+All the items which are not specifically mentioned in this document yet, are necessary for the efficient and safe operation of the equipment, should be considered by the person performing the task.
+3.1	APPROVAL FOR USE IN ONTARIO
+The supplied equipment shall meet the requirements of the Electrical Safety Authority (ESA) for use in Ontario, Canada, as specified in the latest applicable version of the Ontario Electrical Safety Code (OESC) Bulletin 2-7.  All equipment must be designed, built, tested in accordance with the relevant standards for Ontario, Canada, and must be marked with the appropriate approvals. 
+The devices to be owned by the utility, specifically the TA and CA, shall follow the O.Reg. 22/04; however, since the CA may be inside a customer’s premise, the CA should be ESA approved.
+3.2	APPROVAL FOR USE OUTSIDE OF ONTARIO, CANADA
+If deploying outside of Ontario, Canada, ensure all requirements from all authorities having jurisdiction are respected.
+4.	DEFINING OF A QUALIFIED PERSON
+The person that will perform tasks outlined in this document must understand the following and be well versed in their principles:
++	Understand Electrical work safety;
++	Understand electrical theory;
++	Read and interpret drawings of the system;
++	Understanding of computer and communications hardware and principles;
++	Understand and know how to use of a multimeter
++	As required by the authority having jurisdiction
+5.	PHYSICAL INSPECTIONS
+The equipment shall be patrol inspected at minimum once per three-years, though during the trial period a minimum of once per year, for any of the following issues:
+5.1	ENCLOSURE CONDITIONS
+The enclosure provides mechanical protection for the devices required to operate the MiGen system. If damaged, it could impact, for example, functionality, measurements, the lifespan of the devices inside the enclosure. 
+It is important to inspect that there is no damage to the enclosure; holes or pry-marks that could indicate tampering. If there rust exhibits, repair as per enclosure manufacturer’s recommendations. 
+Open the enclosure and look for any signs of water or wildlife that may have entered. If so, determine the point of entry and repair. While the enclosure is open, verify the integrity of all seals and ability to keep the enclosure watertight.
+5.2	VENTILATION FILTER CONDITIONS
+The air circulation vents have filters that will eventually collect dirt or may get damaged by wildlife. It is important to check for proper airflow to ensure adequate cooling during hot days. The filters should be cleaned, repaired or, especially if there are major holes in the membrane, replaced.
+5.3	SIGNS OF BURNING OR OVERHEATING
+Check the terminals and devices inside the enclosure for visible damage from excessive heat, including sign of burning. This condition can happen due to poor contact on electrical terminals or due to a component failure. Verify that the enclosure and applicable device is isolated from all sources of power, and check torque values at the terminals (should be checked every two years in medium to high vibration environments). 
+An infrared scan is highly recommended to have for a visual log of the inspection, to save time and to improve assessment accuracy.
+5.4	ANTENNA AND ANTENNA MAST
+Check for damage to the antenna and antenna mast. Look for any signs of attempts to bend it or climb onto the assembly. Check that the wiring is properly attached and protected.
+Repair as required.
+6.	ELECTRICAL VERIFICATION
+Should an electrical or communications component be replaced, re-verify point-to-point wiring pre-functionality testing to ensure proper electrical power levels, and that data being recovered is not affected.
+6.1	FUSES
+Verify the fuses by checking the voltage drop across the fuse holder. If the fuse is burnt, replace with an equivalent replacement (both ampacity and reaction curve). Verify requirements on the design drawings.
+6.2	TA ANTI- CONDENSATION ELEMENT
+The anti-condensation technique used is a continuously energized 30W element.  Verify that the anti-condensation element is working correctly.  Look for signs of humidity and traces of water.  This could indicate that the anti-condensation element is not working properly or that there is a problem with the sealing of the cabinet or conduit entries.  Often, an unsealed conduit will be a source of humidity that will be too much for an anti-condensation element to manage.
+6.3	TA THERMOSTAT SETTING TO TRIGGER VENTILATION
+To be set at 20 deg C
+Because of the prototype nature of the project, some of the electronic components are not rated for the harsh environments of an outdoor cabinet and is installed in a separate insulated enclosure mainly to protect it against low temperatures.  However, it will also make it difficult for the components to dissipate heat during the summer.  For this reason, we recommend having an air flow inside the cabinet as soon as the temperature is above 20 deg C to help dissipate heat from inside the insulated electronic component enclosure.  
+Verify that the thermostat device temperature level setting is set correctly, and that the device will activate if the setting is changed manually. Return setting to original position after testing.
+6.4	VOLTAGE SOURCES ARE PRESENT WHEN ACTIVE
+Verify that the AC and DC source voltages match with the design drawing requirements. Measure with a multimeter and note the levels in a log.  The tolerance of the electronic devices to voltage variation around nominal rating is fairly robust. The issue is if the source nominal voltage level changed from original design voltage.
+7.	COMMUNICATION SYSTEMS INCLUDING SOFTWARE
+7.1	COMMUNICATION SYSTEMS
+7.1.1	TA
+The TA is physically located adjacent to the neighborhood distribution transformer. Its location is exposed to the environment and therefore, must handle environmental extremes. The TA monitors the local Grid at the low-voltage side of the transformer and communicates with the CAs using Wi-Fi mesh to coordinate Transactional Demand Response (TDR) activity. The TA is also in communication with the BOS using cellular networks to command, control, and monitor the system.
+7.1.1.1	TA – 4G/LTE Communication
+o	Hardware
+The TA utilizes cellular network in the form of 4G/LTE to communicate with the BOS. Shown in Figure 1 is a TA that has all the required 4G/LTE communication components to establish the communication with the cellular network. There are three main components:
+1-	sixfab RaspberryPi 4G/LTE base shield V2: The sixfab shield is powered via a micro-USB and consists of several components that are required to connect to the 4G/LTE network:
+o	The QUECTEL EC25-A mPCIe module: This module is specifically designed for the North America Region and its parameters are reported in Table 1.
+o	The GSM 2G/3G PCB Antenna: This antenna is an omni-directional and connected directly to the QUECTEL EC25-A mPCIe module as shown in Figure 1. It does not need mounting and is installed inside the heated box in the TA metal box. The parameters of the GSM 2G/3G PCB Antenna are reported in Table 2.
+ 
+Figure 1. The GSM 2G/3G PCB antenna connection
+Table 1. Parameters of the QUECTEL EC25-A mPCIe module [1]
+Parameter	Rating
+Bandwidth	1.4/3/5/10/15/20 MHz
+Operating Temperature Range	-40°C ~ +80°C
+Supply Voltage	3.0V~3.6V, 3.3V Typical
+Data speeds	LTE FDD: max 150Mbps (DL)/max 50Mbps (UL).
+LTE TDD: max 130Mbps (DL)/max 35Mbps (UL).
+Output power	Class 3 (23 dBm ± 2 dB).
+Power consumption	3.6mA in sleep mode and 35mA in idle mode
+Table 2. Parameters of the GSM 2G/3G PCB Antenna [2]
+Parameter	Rating
+Supported Frequencies	850/900/1800/1900/2100 MHz
+Input Impedance	50 Ohm
+Connector Type	uFL connector
+Gain	0 dBi
+2-	SIM card: The SIM card is used to provide the LTE connection. The SIM card is inserted in the base shield as shown in the figure. To be able to connect to the 4G/LTE network, it is required to know the Access Point Name (APN) of the service provider. For the current implementation, Bell Jasper SIM cards are used, and the APN for the SIM cards is “ermstatic.bell.ca.ioe”. For other service providers, the APN will be different.
+3-	Raspberry PI (RPI): The RPI used in the TA is Raspberry PI 3 Model B+. The Operating System that was used is Raspbian stretch release 9.4 with Linux kernel 4.14.
+o	Software
+After connecting the 4G/LTE components to the RPI, next ensure its operation and ability to establish communication to the 4G/LTE network.
+First, ensure that the sixfab proper software packages are installed. The following steps are for installing the required package and establishing the communications:
+i.  Clone the repository
+git clone https://github.com/sixfab/Sixfab_PPP_Installer.git
+ii.  Change the permission of the downloaded script and install the script using the following commands:
+cd Sixfab_PPP_Installer/ppp_installer
+chmod +x install.sh
+sudo ./install.sh
+Afterwards, several prompting questions will be asked to complete the installation process. The answers to the questions, based on the hardware used, are reported inside the square brackets [ ]. In addition, Figure 2 and Figure 3 are included for guidance; the answers to the questions based on the hardware stated earlier is reported in the square brackets [ ]. The questions are:
+●	Please choose your Sixfab Shield/HAT [select 2]. The required scripts for the selected shield will be fetched.
+●	What is your carrier APN? [Enter the APN for the service provider]. For Bell Jasper SIM cards, the APN is “ermstatic.bell.ca.ioe”.
+●	Does your carrier need a username and password? [select n] for Bell Jasper SIM cards, there is no need for username and password.
+●	What is your device communication PORT? [For 3G, 4G/LTE Base Shield enter “ttyUSB3”]
+●	Do you want to activate auto-connect/reconnect service at RPi boot up? [select Y] This option allows the connection to the Internet via the shield automatically when the RPI boot up.
+ 
+Figure 2. sixfab shield software installation steps for RPI – part I
+ 
+Figure 3. sixfab shield software installation steps for RPI – part II
+Table 3 summarizes some of the commands that might be needed and the function of each command to establish/disconnect the 4G/LTE communication.
+Table 3. sixfab RPI commands and their functions
+RPI command	Function
+sudo pon	Establish the 4G/LTE communication after booting up the RPI
+sudo poff	Disconnect the 4G/LTE communication
+sudo pppd call gpr	Establish the 4G/LTE communication after booting up the RPI similar to sudo pon
+sudo route add default ppp0	In case of a routing error when establishing the 4G/LTE network communication, run the command to set the ppp0 interface to the default interface to establish the communication
+7.1.1.2	TA - Wi-Fi Mesh Communication
+o	Hardware
+In addition to the LTE communication, the TA communicates with the CAs through Wi-Fi mesh. This communication requires three main hardware components (additionally to the RPI discussed earlier when the 4G/LTE communication was discussed):
+1-	The PAU06 Panda Wireless Dongle: The PAU06 Wi-Fi dongle supports the 2.4 GHz Wi-Fi and its maximum wireless communication speed is 300 Mbps. After communicating with the manufacturer, it is advised to use the pre-installed driver in Linux.
+2-	The Vandal Resistant Low Profile Wi-Fi Antenna: The Vandal Wi-Fi Antenna is an omni-directional antenna that supports both the 802.11 b/g/n 2.4 GHz and 802.11 a/ac 5.8 GHz frequency bands. Its gain is 3 to 5 dBi. In the city, it is mounted on the side of the TA box closest to the CA-HEMSC using the supplied “L” wall mount. The 10ft low-loss RG58U coaxial cable is used to connect the antenna to the PAU06 Wi-Fi dongle supplied by the manufacturer.
+Table 4. Parameters of the Vandal Resistant Low Profile Wi-Fi Antenna [3]
+Parameter	Rating
+Frequency Range	2400-2483 / 5150-5250 / 5725-5850 MHz
+802.11 a, b, g, n, ac
+Impedance	50 ohms
+Antenna Gain	3-5 dBi
+Radiation	Omni
+Polarization	Vertical
+Operating Temperature Range	-40°C to +70°C
+o	Software
+The Wi-Fi Mesh communication is based on the HSMM-PI.
+1-	HSMM-PI along with the OLSR: The HSMM-PI is an open source code and could be installed following the steps below:
+i. Download by running the following commands [4]:
+sudo apt-get install -y git
+git clone https://github.com/urlgrey/hsmm-pi.git
+cd hsmm-pi
+ii. Afterwards, there is a need to change the php Version from 5 to 7.0 in the install.sh as follows:
+sudo nano install.sh
+iii. Change the php Version in the three lines that state the php Version from 5 to 7.0 as shown in Figure 4.
+iv. Then, run the following command
+sh install.sh
+ 
+Figure 4. Updating the php Version in the HSMM-PI install.sh
+v. After installing the HSMM-Pi, the network configuration for the Ethernet and Wi-Fi interfaces should be modified according to Figure 5 using the following command
+sudo nano /etc/network/interface
+ 
+Figure 5. Updating the network configuration of the Ethernet and Wi-Fi interfaces
+2-	Scripts: 
+After installing the mesh on the TA, the routs.sh, olsr.sh, checkDNS.sh, reloadDNS.sh and the vpnUP.sh shell scripts in /usr/local/bin should be given 775 privilege mode using
+sudo chmod 775 NAME_OF_SHELL_SCRIPT.
+
+3-	Crontab Rules: 
+The following crontab rules should be added as shown in Figure 6.
+ 
+Figure 6. Updating the crontab rules of the TA
+7.1.2	CA
+The CA is physically located at the customer’s/prosumer’s premise, a home in this trial, near the service entrance, meter, or breaker panel. It is a trusted piece of equipment by the Distributed System Operator (DSO) that they administer. The CA can perform local power measurements for validating TDR activity. The CA communicates with the TA to coordinate transactional demand response actions, and exposes a secure, open architecture interface to the respective prosumer’s HEMS through HEMSC so that prosumer and DSO privacy plus cybersecurity are preserved. The CA communicates with the TA through Wi-Fi that depends on the HSMM-PI Wi-Fi Mesh communication. Additionally, it communicates with the HEMSC through an Ethernet cable.
+7.1.3	CA – Wi-Fi Mesh Communication
+o	Hardware
+1-	The PAU06 Panda Wireless Dongle:  the PAU06 Wi-Fi dongle supports the 2.4 GHz Wi-Fi and its maximum wireless communication speed is 300 Mbps. After communicating with the manufacturer, it is advised to use the pre-installed driver in Linux.
+2-	The Low-Loss Siretta LLC200A RF Cable:  the RF cable is a low-loss cable where its loss is 0.5 dB/m and nominal impedance is 50 ohms [5].
+3-	Raspberry PI:  the same hardware and Operating System specifications as in the TA – 4G/LTE Communication – Hardware (point 3).
+o	Software
+The Wi-Fi Mesh communication is based on the HSMM-PI.
+1-	HSMM-PI along with the OLSR: The HSMM-PI is an open source code. The same procedure as in the TA – Wi-Fi Mesh Communication – Software (point 1).
+2-	Scripts: 
+After installing the mesh on the TA, the routs.sh shell script in /usr/local/bin should be given 775 privilege mode using
+sudo chmod 775 NAME_OF_SHELL_SCRIPT.
+
+3-	Crontab Rules: 
+The following crontab rule should be added as shown in Figure 7.
+ 
+Figure 7. Updating the crontab rules of the CA
+8.	ARC FLASH ENERGY LEVELS
+The arc flash energy levels inside the enclosure varies depending on the installation location and supply source. 
+8.1	TA
+The TA enclosure is connected to the secondary side of the transformer.  Arc flash calculation was done for some typical installation and showed, in some cases, levels above 8 cal/cm2.  Because of the specific nature of each installation, it is difficult to define rules to classify a site as having the arc flash rating to be under or above the 8 cal/cm2 criteria and avoid having a site-specific calculation.  This is the reason it is strongly recommended to add to the circuit a fuse upstream of the TA cabinet (in a junction box or in the pad mount transformer).  This would guarantee that the arc flash energy level inside the TA shall be considered as being safe for all TA enclosure and a lower energy than at the transformer. The arc flash rating inside the transformer enclosure is still specific to each site.
+In the risk evaluation to establish the work procedure, consider that the fuses located upstream from the TA cabinet are current limiting not more than 15A.  This will guarantee a safe limit of the arc flash level below 8 cal/cm2.
+8.2	CA-HEMSC
+The CA-HEMSC cabinet will be connected in a home, protected by a circuit breaker. When possible, perform inspections while equipment is disconnected from the power source. Once work is completed, reconnect to power and verify system is operating as intended.
+If performing work while energized, wear a minimum Personal Protection Equipment of Class 2 or 8 cal/cm2 arc flash rated gear.
+9.	COMPONENTS IN ENCLOSURES
+The enclosures contains manufactured devices. For tasks involving those components, refer to the manufacturer’s documentation.
+9.1	TA, CA-HEMSC
+For the RaspberryPi plus shields, Measurlogic metrology device, internet switch, and UPS, please refer to the manufacturer’s supplied literature:  references are provided in section 2.
