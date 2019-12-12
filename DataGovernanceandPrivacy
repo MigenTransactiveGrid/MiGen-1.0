@@ -1,0 +1,257 @@
+
+Hydro Ottawa Limited
+MiGen Transactive Grid
+BOS, TA & CA
+Data Governance & Privacy Model
+Data Life Requirements
+ 
+Hydro Ottawa Limited
+ MiGen Transactive Grid
+BOS, TA & CA
+Data Governance & Privacy Model
+Data Life Requirements
+
+
+
+
+	Prepared by:		______________________________
+Alique Langlois, Technologist
+
+
+
+
+Verified by:		______________________________
+Rachael Taljaard, Ph.D.
+
+
+
+
+	Verified by:		______________________________
+Eric Cantin, Technologist 
+
+
+
+
+	Approved by:		______________________________
+Réjean Langlois, P.Eng.
+PEO. membership number: 100098205
+
+ 
+110–240 Catherine Street
+Ottawa, ON K2P 2G8
+T 613 860-2462 F 613 860-1870
+
+CIMA+ file number: A000597B
+
+ 
+ 
+CONTRIBUTION NOTICE PROVISION
+
+
+
+
+
+
+
+Contributed by CIMA Canada Inc. (the “Contributor”)
+
+Copyright 2019 Hydro Ottawa (the “Licensor”)
+
+Licensed under the MiGen Open Source License (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+       https://github.com/MigenTransactiveGrid/MiGen1.0/blob/master/LICENSE 
+
+Unless required by applicable law or agreed to in writing, all software, drawings, and any other material contributed by Contributor, and distributed by Licensor, under the License are contributed or distributed, as applicable, on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including NO WARRANTY with respect to use or fitness of this file FOR any purpose, including NON-INFRINGEMENT OF INTELLECTUAL PROPERTY, COMPLIANCE WITH PRIVACY LEGISLATION, PROTECTION FROM SECURITY VULNERABILITIES, or COMPLIANCE WITH ANY GOVERNMENT STANDARD.
+
+See the License for the specific language governing permissions, disclaimer of warranty, limitation of liability and other limitations under the License. 
+
+REVIEW AND SUBMITTAL REGISTER
+Revision	Reviewed By	Date	Description of the change or Submittal
+0	E. Cantin	Dec 11th, 2019	Official release
+			
+			
+			
+
+
+
+ 
+TABLE OF CONTENTS
+
+Page
+1.	OBJECTIVE	7
+2.	SCOPE	7
+3.	OPERATOR QUALIFICATION REQUIREMENTS	8
+4.	DATA TYPES	8
+4.1	DATA FLOW & STORAGE	8
+4.2	CA-HEMCS:  DURING PROJECT PERIOD ONLY	8
+4.2.1	Home Scheduling	8
+4.2.2	Device Status	9
+4.3	CA-HEMCS: DURING PROJECT & LONG-TERM DEPLOYMENT	9
+4.3.1	Home Energy	9
+4.3.2	Home Setpoint	9
+4.3.3	DR Request	9
+4.3.4	Negotiation	9
+4.3.5	User Interaction	10
+4.4	TA MONITORING	10
+4.4.1	VoltageRMS	10
+4.4.2	Apparent Power	10
+4.4.3	Active Power	10
+4.4.4	Current RMS	10
+4.4.5	Temperature	11
+4.4.6	xmDNS subtypes	11
+4.4.7	mRID (future)	11
+4.4.8	SFDI	11
+4.4.9	LFDI	11
+5.	FUTURE DATA POINTS TO RECORD	12
+5.1	CA-HEMSC	12
+5.1.1	Error logging	12
+5.1.2	Committed DR Capacity	12
+5.1.3	Network refresh	12
+5.1.4	Base load point	12
+5.2	TA MONITORING	12
+5.2.1	Error logging	12
+5.2.2	mRID	13
+6.	SUMMARY	13
+6.1	MIGEN DATA SET	14
+
+ 
+1.	OBJECTIVE
+The Transformer Agent (TA) and Customer Agent Home Energy Management System (CA-HEMS) units installed during the MiGen Transactive Grid project accumulate data that will provide insight into the benefits of distributed energy resource management and resource sharing.
+This document outlines the data set that must be kept, along with durations for retaining that data. It provides guidelines and recommendations that must be used in conjunction with appropriate understanding of data archiving, and the need to flag any potential privacy issues that could arise due to, for example, usage trends. This is in no way a document that will qualify anyone to make the judgement to either aggregate or archive the data as this is dependent on business needs and regulatory dictate.
+This document also defines the technical requirements for equipment and materials needed to achieve the aforementioned data acquisition. 
+2.	SCOPE
+This document covers the minimum requirements for the logged data that has been acquisitioned over the course of the Back Office System (BOS), Transformer/Transactive Agent (TA) and Customer Agent (CA) - Home Energy Management System Controller (HEMSC) operating life. Since the BOS receives all data from the TA, what applies to the TA is applicable to the BOS.  Additional data points or changes to the existing data handling may be required in the future development of the project. 
+All the items which are not specifically mentioned in this document, but which are necessary for trending and benchmarking, should be considered by the person performing the task.
+Two key tenants are:
+1.	To retain the Privacy by Design principles and protect any and all data from unauthorized access or figuring out the customer from whom the data can be associated with. 
+2.	To retain and protect all and any data related to regulatory compensation of a customer per the jurisdictional business or statutory rules.
+3.	OPERATOR QUALIFICATION REQUIREMENTS
+The person performing the tasks outlined in this document must be well versed in the following principles:
++	Understanding of data trend tracking;
++	Understanding of data governance;
++	Reading and interpreting data being outputted by the system;
++	Device communications topology, protocols, application and troubleshooting;
++	Manipulating data for aggregation purposes;
++	Understanding of corporate data business needs, policies and procedures;
++	Understanding of legal - regulatory or other - requirements regarding utility data.
+4.	DATA TYPES
+The equipment part of the MiGen Transactive Grid will be outputting any number of the following data types and at any given rate, as indicated below. It should be noted however, that at times not all points may be in use or be available.
+4.1	DATA FLOW & STORAGE
+The MiGen Transactive Grid data flows bidirectionally between the MiGen elements plus the HEMS.
+This document explains the overall intent and how the data was stored for this demonstration project. 
+4.2	CA-HEMCS:  DURING PROJECT PERIOD ONLY
+The CA-HEMSC monitors the actions of HEMS, or other smart devices, taken under the umbrella it is monitoring. If such a device within the CA-HEMSC network is activated or its state changes to, for example the mitigation of loading, then this action will be registered by the CA-HEMSC. 
+For Privacy-by-Design reasons, the following points should be registered during the project period only and all such data responsibly erased once the project is completed unless stated otherwise.
+4.2.1	Home Scheduling
+This tracks the duration of a smart device’s state change (i.e., “on,” “off,” “throttled”) as a result of a Demand Response (DR) agreement. The data points are per device within the CA-HEMSC monitoring umbrella, and state change log per DR agreement. The data from these points during the test period should be retained as there is value in assessing the viability of the request system. Once the project concludes there is potential for this information to be used inappropriately and so should not be kept in non-anonymized and traceable form for longer than a six-month duration.
+4.2.2	Device Status
+This data point tracks the current status for each device in the CA-HEMSC monitoring umbrella by outputting the current status. The data points are sent to the database every twelve minutes. The tracking of the data points during the project period should be kept in its entirety. Once the project concludes the non-anonymized and traceable information can be cycled out of the database after six months.
+4.3	CA-HEMCS: DURING PROJECT & LONG-TERM DEPLOYMENT
+The following points should be registered during testing and long term deployment.
+4.3.1	Home Energy
+Home Energy is the supplementary reading, to the premise billing meter, of the unit’s energy usage. It is registered at one-minute intervals, unlike the less granular interval from the utility revenue meter. During the project period it would be wise to keep the complete data set for the full duration prescribed by business or legal needs. For future studies, after for example one-year, aggregate data to an hourly value and perhaps after the statutory period, aggregation to a daily value would be granular enough. 
+4.3.2	Home Setpoint
+This tracks the activation of the devices in the CA-HEMSC monitoring umbrella. The data points are per device and log on change. The tracking of these points during the test period should retain all data as there is value in assessing the viability of the request system. Once the testing concludes there is potential for information to be used inappropriately and so should not be kept for longer than a six-month duration.
+4.3.3	DR Request
+This data point logs the Demand Response request issued by the TA to shift demands with other CA-HEMSC connected within it’s umbrella i.e., those connected to the issuing TA. The data point logs each event and the tracking of this point during the project period should be kept in its entirety. This will allow for verification and validation of project performance and prosumer participation. Once the project concludes, the information can be cycled out of the database after the business or the statutory period.  A business period of one year would typically be sufficient.
+4.3.4	Negotiation
+This data point tracks the negotiation IDs with other CA-HEMSC on the local grid. The data point logs each event and the tracking of this point during the project period should be kept in its entirety. This will allow for verification and validation of project performance and prosumer participation. Once the project concludes, the information can be cycled out of the database after synchronising to the “DR Request” retention period.
+4.3.5	User Interaction
+This data point logs the TA request to lower consumption sent to other CA-HEMS connected to the same TA. The data point logs each event and the tracking of this point during the project period should be kept in its entirety. This will allow for verification and validation of project performance. Once the project concludes the information can be cycled out of the database after one or two years.
+4.4	TA MONITORING 
+The TA monitors temperature and the loading of the transformer on which it is installed. When required, the TA issues a DR request to the CA-HEMSCs connected to this transformer to lower consumption or shift the loading pattern so loading stays within the transformer’s dynamic kVA rating. This ensures its protection fuses are not damaged or blown, and thus not interrupting delivery of electricity service to downstream customers.  Where applicable, the units for each parameter in the data saved state is to be rendered as actual, not per unit, and in the fundamental base eg. not centi, milli, or kilo.
+The data points that will be registered are listed below.
+4.4.1	VoltageRMS
+The VoltageRMS data point is the voltage measurement at the neighbourhood transformer’s secondary winding. This data point will follow similar data management as for substation or feeder power data. This implies that the data will be kept in its entirety for a minimum of one year, however, aggregated to a lower resolution onwards for trend viewing. During the project period, it will be necessary to keep the data to a one-minute granularity.  The unit shall be Volt (V).
+4.4.2	Apparent Power
+Apparent Power is the reading of the power output at the transformer. This data point will follow similar data management as for substation or feeder power data. This implies that the data will be kept in its entirety for a minimum of one year, however, aggregated to a lower resolution onwards for trend viewing. During the project period, it will be necessary to keep the data for the duration of the project.  The unit shall be Volt-Amp (VA).
+4.4.3	Active Power
+This data point is required in order to track the power factor at the transformer’s secondary winding based on the Apparent Power output. This data point will follow the same data management as “Apparent Power.”  The unit shall be Watt (W).
+4.4.4	Current RMS
+Current RMS is the reading of the current drawn from the secondary side of the neighbourhood transformer i.e., the aggregated downstream loads of the transformer. This data point will follow the same data management as “Apparent Power.”  The unit shall be Amp (A).
+4.4.5	Temperature
+The temperature of the transformer is logged to better understand the thermal dissipation and that is occurring. Ideally, the core - or expected “hot spot” - temperature is monitored, failing that then the most available temperature to reasonably infer the core temperature can be used.  
+Also, local ambient temperature is logged to assess the dynamic capacity of the transformer; as the ambient temperature drops, the transformer capacity can increase while not, or more slowly, raising the core temperature.  Ideally, this data is gathered where the TA is located, otherwise, weather office data may be used.
+During the project period it is advised that all the data is retained. Once the data is collected and analysed to visualise trends, the data can then be aggregated after six months to a lower resolution for an hourly rate or a six-hour average.  The unit shall be Celcius (⁰C).
+4.4.6	xmDNS subtypes
+All the points of connection in the TA umbrella (CA-HEMSC and other devices) will be using the TA as the gateway device and will log its IP address from the xmDNS. These points will be logged for tracking purposes on a per-event basis. This data for the duration of the project period will be kept in its entirety. Once the project is fully implemented this data could be cycled out of the database over a six-month period. If working with other data for trending or analytics,  then this retention period would be useful to show data flow between the devices and help build up a picture of what is happening and when.
+4.4.7	mRID (future)
+The mRID, “Master Resource Identifier,” is a point that is not implemented in MiGen Ph 1, but could be implemented to track the devices on the grid as more systems are installed.
+4.4.8	SFDI
+The SFDI is known as the Short Form Device Identifier and will be used to identify the device as a credible device. It will be a part of three identifiers (SFDI, LFDI, mRID) that will be sent between MiGen elements connected to the network.
+4.4.9	LFDI
+The LFDI is known as the Long Form Device Identifier and will be used to identify the device as a credible device. It will be a part of three identifiers (SFDI, LFDI, mRID) that will be sent between MiGen elements connected to the network.
+5.	FUTURE DATA POINTS TO RECORD
+To help troubleshoot or track future points of interest, we recommend collecting additional data points.
+5.1	CA-HEMSC
+The CA-HEMSC points that may be of interest and of value to include in the data collection are:
+5.1.1	Error logging
+It was noted that there was no way to trace errors back over a long period (more than one day with the available onboard memory). This information should be logged to a long-term database or to where a technician can access operational logs to prevent unneeded rollout cost and to facilitate tracking and resolution of recurring errors.
+5.1.2	Committed DR Capacity
+The actual committed DR capacity must be recorded to quantify the DR energy capacity, and making sure ancillary services (from the potential capacity) are physically available. This can be generally implemented within the pre-existing day-ahead, or through a four-hour in-advance warning mechanism, therefore a granularity of 1-minute sample rate would be suggested. The actual purpose of DR committed capacity data in this project is to characterize the “market reliability” and “financial incentives” rather than an obligatory support.
+5.1.3	Network refresh
+This point would be used to identify when new and existing MiGen elements are added or removed.
+5.1.4	Base load point
+This would be used to understand the maximum load that could be shed without affecting a residence.  The base load is calculated using historical and present data analysed with machine learning.
+5.2	TA MONITORING
+Recommended points to be registered on the TA are as follows:
+5.2.1	Error logging
+It is noted that there is no way to trace errors back over a long period (more than one day with the available onboard memory). This information should be logged to a long-term database or to where a technician can access operational logs to prevent unneeded rollout cost and to facilitate tracking and resolution of recurring errors.
+5.2.2	mRID
+This Master Resource identifier is not implemented in this phase but would be useful for monitoring the MiGen elements on the grid as more systems are installed.
+6.	SUMMARY
+MiGen could evolve and need more data points and said point will need to be monitored to provide and assess the quality of the MiGen transactive demand response platform. Noting that this is not an exhaustive data points listing yet, sufficient for efficacy to meet system operation, planning, settlement and transactive demand response needs.  Ultimately, the responsibility of the data is to be managed by the utility.
+ 
+
+6.1	MIGEN DATA SET
+ 
+	Data Route - From	Data Route - To	Data Definition	Data Format	Interval	Data Life / Archiving 	Additional Note
+Home identifier	HEMSC	HEMSC	key for accessing energate	Binary		2021	Initiated by HEMS OEM (i.e., Energate). Track changes made by participants.
+Customer identifier	HEMSC	HEMSC	key for accessing energate	Binary		2021	Initiated randomly by ResGUI. Track changes made by participants.
+CA server key	HEMSC	HEMSC	key for accessing CA	hex		2020	
+User/pass	HEMSC	ResGUI (in Cloud)	credential	json	-	2021	For Ph I, MiGen Team used AWS for Cloud
+phaseAVoltage	HEMSC	ResGUI (in Cloud)	Voltage of phase A	json	1 min	2021	in single phase, bi-pole applications (i.e., 120/240V), phaseA=L1 pole, phaseB=L2 pole
+phaseBVoltage	HEMSC	ResGUI (in Cloud)	Voltage phase B	json	1 min	2021	in single phase, bi-pole applications (i.e., 120/240V), phaseA=L1 pole, phaseB=L2 pole
+unitACWatts	HEMSC	ResGUI (in Cloud)	inverter AC power	json	1 min	2021	
+frequency	HEMSC	ResGUI (in Cloud)	inverter frequency	json	1 min	2021	
+dcVoltage	HEMSC	ResGUI (in Cloud)	inverter dc Voltage	json	1 min	2021	
+dcWatts	HEMSC	ResGUI (in Cloud)	inverter dc power	json	1 min	2021	
+soc	HEMSC	ResGUI (in Cloud)	Battery SoC	json	1 min	2021	
+availableStorage	HEMSC	ResGUI (in Cloud)	Battery available energy	json	1 min	2021	
+batteryVoltage	HEMSC	ResGUI (in Cloud)	Battery Voltage	json	1 min	2021	
+pvVoltage	HEMSC	ResGUI (in Cloud)	PV Voltage	json	1 min	2021	
+HomeEnergy	HEMSC	ResGUI (in Cloud)	HomeEnergy	json	1 min	2021	
+DeviceEnergy	HEMSC	ResGUI (in Cloud)	DeviceEnergy	json	1 min	2021	
+Device Status	HEMSC	ResGUI (in Cloud)	Device current status	json	1 min	2021	Track changes made by participant or a DR/DER event
+Thermostat Setting	HEMSC	ResGUI (in Cloud)	Device thermal setting	json	1 min	2021	Track changes made by participant or a DR/DER event
+Device schedules	HEMSC	ResGUI (in Cloud)	Device working schedule	json	1 min	2021	Track changes made by participant or a DR/DER event
+Loadshed availability	HEMSC	CA	DR baseline	xml	per event		
+DR response	HEMSC	CA	response to a DR event	xml	per event		
+Home power	CA	TA	Home power meter data	xml	1 min		
+Loadshed availability	CA	TA	DR baseline	xml	per event		
+DR response	CA	TA	response to a DR event	xml	per event		
+TA server key	CA	CA	key for accessing TA	hex		2020	
+Volt_AB	TA	TA and Cloud	Line voltage	SQL/json	1 min		For Ph I, MiGen Team used IBM for Cloud
+Current_A	TA	TA and Cloud	Current of phase A	SQL/json	1 min		
+Current_B	TA	TA and Cloud	Current phase B	SQL/json	1 min		
+Power_A	TA	TA and Cloud	Phase A power	SQL/json	1 min		
+Power_B	TA	TA and Cloud	Phase B power	SQL/json	1 min		
+Freq	TA	TA and Cloud	Frequency	SQL/json	1 min		
+pf_A	TA	TA and Cloud	Power factor of phase A	SQL/json	1 min		
+pf_B	TA	TA and Cloud	Power factor of phase B	SQL/json	1 min		
+CaseTemp	TA	TA and Cloud	Transformer case temperature	SQL/json	1 min		
+EnvTemp	TA	TA and Cloud	Environment temperature	SQL/json	1 min		
+Reward	TA	TA	Customer reward	SQL	per event		“Reward” refers to equitable distribution of DR/DER requests for equitable participation and not provision of benefit by, for example, credit or monetary means
+SFDI	TA	TA	Device identifier	hex	per event		
+LFDI	TA	TA	Device identifier	hex	per event		
+BOS server key	TA	TA	key for accessing BOS	hex			
+User/pass	TA	Cloud	User credentials	json	per case		For Ph I, MiGen Team used AWS for Cloud
+Asset data	TA	Cloud	Location of an asset (Transformer)	json	per case		
+DR program	TA	Cloud	Setting for DR program	json	per event		
+End Device	TA	Cloud	Setting for an asset	json	per event		
+Function set assignments	TA	Cloud	Setting for assigned program to an asset	json	per event		
+SFDI	TA	Cloud	Device identifier	json	per event		
+LFDI	TA	Cloud	Device identifier	json	per event		
+Smart meter Data	Participant smart meter	HOL smart meter database	Net Power use from the grid of each participant	csv	Hourly	 	
+Weather data	Weather station	Cloud – weather.gc.ca	Weather data for the site	csv	Daily	 	
+
