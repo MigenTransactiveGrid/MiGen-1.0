@@ -5,4 +5,4 @@ Information on MiGen
 
 https://hydroottawa.com/save-energy/innovation/migen
 
-*No affiliation to m-labs/migen ..... /m-labs
+NOTE: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the m-labs/migen and/or /m-labs, or any of its subsidiaries or its affiliates. 
