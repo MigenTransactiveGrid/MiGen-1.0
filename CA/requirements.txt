@@ -22,7 +22,7 @@ pycparser==2.18
 pyflakes==1.6.0
 PyJWT==1.4.2
 python-dateutil==2.6.1
-PyYAML==3.12
+PyYAML==5.4
 six==1.10.0
 SQLAlchemy==1.1.14
 sqlalchemy-migrate==0.11.0
